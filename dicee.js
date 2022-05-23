@@ -67,10 +67,10 @@ function result2(){
 }
 function check(){
     if (random1 > random2){
-        results.innerHTML=("Player 1 Wins!");
+        results.innerHTML=("🚩Player 1 Wins!");
     }
     if (random1 < random2){
-        results.innerHTML=("Player 2 Wins!");
+        results.innerHTML=("🚩Player 2 Wins!");
     }
     if (random1 == random2){
         results.innerHTML=("Draw!");

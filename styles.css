@@ -31,7 +31,9 @@ p {
 img {
   width: 50%;
 }
-
+.row{
+  display: flex;
+}
 footer {
   margin-top: 5%;
   color: #EEEEEE;

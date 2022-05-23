@@ -1,25 +1,28 @@
 var random1;
 var random2;
 
-var dice1 = document.getElementById("img1")
-var dice2 = document.getElementById("img2")
-var dice3 = document.getElementById("img3")
-var dice4 = document.getElementById("img4")
-var dice5 = document.getElementById("img5")
-var dice6 = document.getElementById("img6")
+var dice1 = document.getElementById("img1");
+var dice2 = document.getElementById("img2");
+var dice3 = document.getElementById("img3");
+var dice4 = document.getElementById("img4");
+var dice5 = document.getElementById("img5");
+var dice6 = document.getElementById("img6");
 
-var dice1V2 = document.getElementById("img1-1")
-var dice2V2 = document.getElementById("img2-1")
-var dice3V2 = document.getElementById("img3-1")
-var dice4V2 = document.getElementById("img4-1")
-var dice5V2 = document.getElementById("img5-1")
-var dice6V2 = document.getElementById("img6-1")
+var dice1V2 = document.getElementById("img1-1");
+var dice2V2 = document.getElementById("img2-1");
+var dice3V2 = document.getElementById("img3-1");
+var dice4V2 = document.getElementById("img4-1");
+var dice5V2 = document.getElementById("img5-1");
+var dice6V2 = document.getElementById("img6-1");
+
+var results = document.getElementById("results");
 
 function rollDice(){
     random1 = Math.ceil(Math.random() * 6);
-    random2 = Math.floor(Math.random() * 6);
+    random2 = Math.ceil(Math.random() * 6);
     result1();
     result2();
+    check();
 }
 
 function result1(){
@@ -62,5 +65,19 @@ function result2(){
         dice6V2.style.width="160px";
     }
 }
+function check(){
+    if (random1 > random2){
+        results.innerHTML=("Player 1 Wins!");
+    }
+    if (random1 < random2){
+        results.innerHTML=("Player 2 Wins!");
+    }
+    if (random1 == random2){
+        results.innerHTML=("Draw!");
+    }
+    
+}
+
+
 
 rollDice();

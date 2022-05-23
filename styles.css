@@ -44,6 +44,9 @@ footer {
   font-family: 'Indie Flower', cursive;
 
 }
+#results{
+  font-size: 100px;
+}
 #img1 {
   width: 0%;
 }

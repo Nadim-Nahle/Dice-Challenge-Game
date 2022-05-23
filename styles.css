@@ -29,7 +29,7 @@ p {
 }
 
 img {
-  width: 80%;
+  width: 50%;
 }
 
 footer {
@@ -38,4 +38,22 @@ footer {
   text-align: center;
   font-family: 'Indie Flower', cursive;
 
+}
+#img1 {
+  width: 0%;
+}
+#img2 {
+  width: 0%;
+}
+#img3 {
+  width: 0%;
+}
+#img4 {
+  width: 0%;
+}
+#img5 {
+  width: 0%;
+}
+#img6 {
+  width: 0%;
 }
